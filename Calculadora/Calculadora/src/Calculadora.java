@@ -14,6 +14,9 @@ public class Calculadora {
     }
 
     private double dividir(double valorUm, double valorDois){
+        if(valorDois == 0){
+            System.out.println("Divisão por zero não é permitida");
+        }
         return valorUm / valorDois;
     }
 
